@@ -67,9 +67,10 @@ p{
 
 /* main-banner*/
 .main-banner{
-    background-image: url("/img/3493C653-B36D-438A-99DE-484A176F5A83_L0_001-05_04_2024\,\ 13_06_54.png");    
+    background-image: url("/img/3493C653-B36D-438A-99DE-484A176F5A83_L0_001-05_04_2024\,\ 13_06_54.png"); 
+    background-size: cover;   
     background-position: center;
-    padding: 17rem 0;  
+    padding: 18rem 0;  
 }
 
 .main-banner p{
@@ -276,6 +277,81 @@ footer{
     font-size: 15px;
     margin-top: 100px;
     margin-bottom: 3px;    
+}
+
+/*Responsividade*/
+
+/* small laptop a partir de 1100px*/
+@media (max-width: 1100px){
+    .plans-container{
+        width: 95%;
+    }
+
+    .plan{
+        margin: 0 5px;
+    }
+}
+
+/* tablet */
+@media (max-width: 900px){
+    .main-banner p{
+        padding: 0 6rem;
+    }
+
+    .search-container{
+        padding: 2rem 4rem;
+    }
+}
+
+/* Mobile */
+@media(max-width: 576px){
+    html, 
+    body{
+        overflow-x: hidden;
+    }
+
+    .navbar-items li{
+        font-size: 12px;
+        margin-left: 10px;
+    }
+
+    .main-banner p{
+        padding: 0 2rem;
+    }
+
+    .services-container ul{
+        flex-direction: column;
+    }
+
+    .plans-container{
+        flex-direction: column;
+        width: 100%;
+        padding: 0 2rem;
+    }
+
+    .plan{
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .search-container h2{
+        font-size: 28px;
+    }
+
+    .search-container input[type=text]{
+      width: 100%;
+      font-size: 18px;
+    }
+
+    .contact-container{
+        padding: 3rem 2rem;
+    }
+
+    .contact-container input{
+        width: 100%;
+        margin: 10px 0;
+    }
 }
 
 
